@@ -6,7 +6,10 @@ const Square = (props) => {
   const theme = useContext(ThemeContext);
 
   const handleClick = (e)=>{
-    props.handleClick(e.target.getAttribute('id'))
+    if(props.symbol === '-'){
+      props.handleClick(e.target.getAttribute('id'))
+    }
+
   }
 
   return (
