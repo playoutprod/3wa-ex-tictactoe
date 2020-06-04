@@ -5,7 +5,7 @@ export default (props)=>{
   const [checked,setChecked] = useState(false)
 
   const handleChange = (e)=>{
-    const isChecked = e.target.value == 0 ? true : false
+    const isChecked = e.target.value === 0 ? true : false
     setChecked(isChecked)
     props.onChange(isChecked);
   }
