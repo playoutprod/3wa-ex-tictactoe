@@ -60,6 +60,7 @@ const Board = (props) => {
   }
 
   let id = 0;
+
   const playsLeft = state.board.filter(value=> value === null).length;
 
   return (

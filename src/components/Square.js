@@ -1,15 +1,17 @@
 import React,{useContext} from 'react';
+
 import ThemeContext from '../config/themes.js';
+
 import PropTypes from 'prop-types';
 
 const Square = (props) => {
+
   const theme = useContext(ThemeContext);
 
   const handleClick = (e)=>{
     if(props.symbol === '-'){
       props.handleClick(e.target.getAttribute('id'))
     }
-
   }
 
   return (
@@ -18,6 +20,8 @@ const Square = (props) => {
     </div>
   );
 }
+
+
 
 Square.propTypes = {
   symbol: PropTypes.string,
